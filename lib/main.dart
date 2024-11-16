@@ -20,10 +20,10 @@ class MyApp extends StatelessWidget {
 
 class BusstopRoute extends StatefulWidget {
   @override
-  _BusStopRouteSelectorState createState() => _BusStopRouteSelectorState();
+  Busstate createState() => Busstate();
 }
 
-class _BusStopRouteSelectorState extends State<BusstopRoute> {
+class Busstate extends State<BusstopRoute> {
   String? isSelectedItem = '未選択';
 
   String? isSelectedItem2 = '未選択';
@@ -59,7 +59,7 @@ class _BusStopRouteSelectorState extends State<BusstopRoute> {
                         fontSize: 20,
                       ),
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: 85),
                     Text(
                       '台車2の選択',
                       style: TextStyle(
@@ -100,8 +100,8 @@ class _BusStopRouteSelectorState extends State<BusstopRoute> {
                           value: '＋のんキールート',
                         ),
                         DropdownMenuItem<String>(
-                          child: Text('×未選択'),
-                          value: '×未選択',
+                          child: Text('× 未選択'),
+                          value: '× 未選択',
                         ),
                       ],
                       onChanged: (String? value) {
@@ -111,7 +111,7 @@ class _BusStopRouteSelectorState extends State<BusstopRoute> {
                       },
                       value: isSelectedItem,
                     ),
-                    SizedBox(width: 20),
+                    SizedBox(width: 50),
                     DropdownButton<String>(
                       items: const [
                         DropdownMenuItem<String>(
@@ -139,8 +139,8 @@ class _BusStopRouteSelectorState extends State<BusstopRoute> {
                           value: '＋のんキールート',
                         ),
                         DropdownMenuItem<String>(
-                          child: Text('×未選択'),
-                          value: '×未選択',
+                          child: Text('× 未選択'),
+                          value: '× 未選択',
                         ),
                       ],
                       onChanged: (String? value) {
