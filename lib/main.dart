@@ -35,6 +35,7 @@ class Busstate extends State<BusstopRoute> {
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: const Text('台車アプリ'),
       ),
+      
       body: Container(
         child: Padding(
           padding: const EdgeInsets.all(80.0),
@@ -75,9 +76,12 @@ class Busstate extends State<BusstopRoute> {
                   children: [
                     DropdownButton<String>(
                       items: const [
+                        
                         DropdownMenuItem<String>(
                           child: Text('未選択'),
                           value: '未選択',
+                          
+                          
                         ),
                         DropdownMenuItem<String>(
                           child: Text('＋中央ルート'),
